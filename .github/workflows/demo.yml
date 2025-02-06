@@ -22,3 +22,13 @@ jobs:
         with:
           name: build-artifat
           path: ${{github.workspace}}
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: build-artifat
+          path: ${{github.workspace}}
+          run: ls -R  
+      
