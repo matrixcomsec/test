@@ -31,5 +31,5 @@ jobs:
         with:
           name: build-artifat
           path: ${{github.workspace}}
-          run: ls -R  
+      - run: ls -R  
       
